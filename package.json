@@ -1,5 +1,5 @@
 {
-  "name": "github-pages-deploy-test",
+  "name": "github-pages-deploy-with-next.js",
   "version": "0.1.0",
   "private": true,
   "scripts": {
