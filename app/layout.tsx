@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Github Pages Deploy With Next.js",
@@ -15,7 +13,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={inter.className}>{children}</body>
+      <body className="p-4 grid grid-rows-[auto_1fr] gap-8 ">
+        <nav>
+          <ul className=" flex flex-wrap gap-4">
+            <li>
+              <Link href="/" className=" underline">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className="underline">
+                About
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
