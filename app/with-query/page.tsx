@@ -17,11 +17,27 @@ export default function WithQuery() {
             </QueryChangeLink>
           </li>
           <li>
+            <QueryChangeLink
+              queries={{ a: "a", b: "b" }}
+              className=" underline"
+            >
+              a=a, b=b
+            </QueryChangeLink>
+          </li>
+          <li>
             <QueryChangeButton
               queries={{ type: "button" }}
               className=" p-2 border border-black"
             >
               type=button
+            </QueryChangeButton>
+          </li>
+          <li>
+            <QueryChangeButton
+              queries={{ a: "1", b: "2" }}
+              className=" p-2 border border-black"
+            >
+              a=1, b=2
             </QueryChangeButton>
           </li>
         </ul>
