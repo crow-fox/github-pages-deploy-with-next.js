@@ -26,6 +26,11 @@ export default function RootLayout({
                 About
               </Link>
             </li>
+            <li>
+              <Link href="/with-query" className="underline">
+                With Query
+              </Link>
+            </li>
           </ul>
         </nav>
         <main>{children}</main>
